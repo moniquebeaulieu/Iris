@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <head>
+    <title>Iris prediction</title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+
+<h1> Iris prediction</h1>
+<p>
+    Got the following values<br>
+    
+    {% for key, value in request_dict.items() %}
+      {{key}}={{value}}<br>
+   {% endfor %}
+</p>  
+    {% if values_ok %}
+    <p>
+        Predicted Iris is <b>{{pred_str}}</b> with probability {{pred_proba}}.
+    </p>
+    {% else %}
+    <p>
+       There was a problem with measurements submitted. Check values above. 
+    </p>
+    {% endif %}
+    
+<a href="/">Go back</a>
+    
+</body>

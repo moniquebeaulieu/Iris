@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <head>
+    <title>Iris prediction</title>
+    <link href="/static/style.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+    <h1> Enter Iris measurements</h1>
+    
+  <form method="get" action="/iris_prediction">
+      <div class="container">
+        <div class="left">
+            <img src="/static/iris_petal_sepal.png" alt="Iris measurements" style="width:188px;height:148px;">
+      </div>
+      <div class="right">
+    Sepal length (cm): <input type="text" 
+                         name="sepal_length" 
+                         placeholder="Example: 6.2"><br>
+    Sepal width (cm): <input type="text" 
+                        name="sepal_width" 
+                        placeholder="Example: 2.9"><br>
+    Petal length (cm): <input type="text" 
+                         name="petal_length" 
+                         placeholder="Example: 4.3"><br>
+    Petal width (cm): <input type="text" 
+                        name="petal_width" 
+                        placeholder="Example: 1.3"><br>
+    
+        </div>
+          <input type="submit" value="Get prediction">
+      </div>
+      
+      
+    </form>
+    
+</body>

@@ -1,0 +1,47 @@
+body {
+    background: whitesmoke;
+    width: 800px;
+    margin: auto;
+}
+
+h1 {
+    color: maroon;
+    text-align: center;
+}
+
+p {
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type=button],
+input[type=submit],
+a {
+        background-color: maroon;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+div.container{
+    overflow: auto;
+}
+
+div.left{
+    float: left;
+    width: 380px;
+    padding: 10px;
+    text-align: right
+}
+
+div.right{
+    float: right;
+    width: 380px;
+    padding: 10px;
+    text-align: left
+}
